@@ -58,3 +58,7 @@ jobs:
   #        if[ "${CURRENT_BRANCH}" === "master" ]
   #        then
 
+workflows:  
+ build-and-deploy:
+  jobs:
+    - build 
