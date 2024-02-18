@@ -14,9 +14,9 @@ jobs:
           keys:
             - app-{{ checksum $"package.json" }}
             - app-
-      - run:
-          name: install yarn
-          command: npm install --global yarn
+      # - run:
+      #     name: install yarn
+      #     command: npm install --global yarn
       - run:
           name: insatll dependencies
           command: yarn install
