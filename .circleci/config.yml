@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: show current branch
-          command: echom ${CURRENT_BRANCH}
+          command: echo ${CURRENT_BRANCH}
       - restore_cache:
           keys:
             - app-{{ checksum $"package.json" }}
